@@ -29,12 +29,11 @@ public class FrogSimulation
 	
 	public double runSimulations(int num)
 	{ 
-		int goalPassed = 0;
+		double goalPassed = 0.0;
 		for(int i = 0; i < num; i++){
-		i.simulate();
-		if(i.simulate() == true)
+		if(simulate() == true)
 		goalPassed++;}
-		return (double) goalPassed/num;
+		return goalPassed/num;
 	}
 	
 	
